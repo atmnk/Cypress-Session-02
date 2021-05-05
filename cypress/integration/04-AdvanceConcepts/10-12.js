@@ -14,18 +14,7 @@ before(()=>{
 })
 describe('Profile Image URL',()=>{
     it('Update and Verify',()=>{
-        let newSettings  = {
-            url : 'https://picsum.photos/200'
-        }
-        LoginPage.visit()
-        cy.task('getJWT',{id:user.email}).then(jwt=>{
-            LoginPage.loginWithToken(jwt)
-        })
-        UserPage.navigateToSettings()
-        SettingsPage.modifySettings(newSettings)
-        UserPage.getProfileUrlElementSrcValue().then(val=>{
-            expect(val).to.equal(newSettings.url)
-        })
+        
     })
 })
 function createUser(user){
