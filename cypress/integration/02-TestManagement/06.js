@@ -5,7 +5,7 @@ import * as UserPage from '../../pages/User'
 import * as SettingsPage from '../../pages/Settings'
 useTags(['Positive'],()=>{
     describe('Settings Page - Positive',()=>{
-        it('Modify Profile URL',()=>{
+        it.skip('Modify Profile URL',()=>{
             const url = 'https://picsum.photos/200'
             LoginPage.visit()
             LoginPage.login('naik_atmaram@yahoo.com','test123$')
