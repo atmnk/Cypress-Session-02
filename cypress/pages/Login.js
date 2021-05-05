@@ -7,3 +7,8 @@ export function login(email,password){
     cy.get('.btn-primary').click()
     cy.contains('Popular Tags')
 }
+
+export function loginWithToken(token){
+    localStorage.setItem('jwt',token)
+     cy.visit("/")
+ }
