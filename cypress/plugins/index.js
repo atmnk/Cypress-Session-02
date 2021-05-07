@@ -15,12 +15,8 @@
  * @type {Cypress.PluginConfig}
  */
 // eslint-disable-next-line no-unused-vars
-// const {getToken} = require("../non-browser/tokenManager")
 
 module.exports = (on, config) => {
-  // on('task', {
-  //   getJWT: getToken
-  // });
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 }

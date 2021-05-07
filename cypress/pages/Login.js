@@ -9,6 +9,6 @@ export function login(email,password){
 }
 
 export function loginWithToken(token){
-    localStorage.setItem('jwt',token)
-     cy.visit("/")
+    // 'jwt'
+
  }

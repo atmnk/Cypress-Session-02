@@ -11,9 +11,8 @@ export function modifySettings(newSettings){
     }
     
     cy.get('input[placeholder="New Password"]').clear().type("test123$")
-    cy.intercept('PUT','https://tw-cypress-be.herokuapp.com/api/user').as('UpdateAPI')
+    //PUT 'https://tw-cypress-be.herokuapp.com/api/user'
     cy.get('.btn-primary').click()
-    cy.wait('@UpdateAPI')
 }
 export function verifyMessage(message){
     cy.contains(message)
